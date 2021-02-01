@@ -1,5 +1,6 @@
 # Introduction 
 This is a Vagrant file and an ansible playbook to run FreeIPA server on VirtualHost environment.
+
 Based on [post from the internet](https://medium.com/netdef/using-vagrants-ansible-provisioner-to-build-a-freeipa-server-1007fbafd595) and on [official FreeIPA ansible playbook](https://github.com/freeipa/ansible-freeipa.git).
 
 # Dependencies
