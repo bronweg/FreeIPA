@@ -9,7 +9,7 @@ Based on [post from the internet](https://medium.com/netdef/using-vagrants-ansib
 
 # Build and Test
 Just run `vagrant up` to build the VM.
-To connect enter the [Web-UI](https://test.my.domain).
+To connect enter the Web-UI (https://test.my.domain).
 - username: admin
 - password: password
 
