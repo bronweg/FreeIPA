@@ -16,8 +16,8 @@ To connect enter the [Web-UI](https://test.my.domain).
 # Update
 To update the playbook:
 - Clone the latest version of the playbook.
--- For example: `git clone --branch v0.3.4 https://github.com/freeipa/ansible-freeipa.git`
+  - For example: `git clone --branch v0.3.4 https://github.com/freeipa/ansible-freeipa.git`
 - Copy `roles` folder to provisioning.
--- `cp -r ansible-freeipa/roles provisioning/`
+  - `cp -r ansible-freeipa/roles provisioning/`
 - Run new VM
--- `vagrant up`
+  - `vagrant up`
