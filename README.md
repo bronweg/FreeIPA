@@ -1,20 +1,23 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This is a Vagrant file and an ansible playbook to run FreeIPA server on VirtualHost environment.
+Based on [post from the internet](https://medium.com/netdef/using-vagrants-ansible-provisioner-to-build-a-freeipa-server-1007fbafd595) and on [official FreeIPA ansible playbook](https://github.com/freeipa/ansible-freeipa.git).
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Dependencies
+- vagrant have to be installed on host (have been tested on version 2.2.14).
+- ansible have to be installed on host (have been tested on version 2.9.6).
+- Future VM have to be reachable from host by FQDN (by default - test.my.domain)
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Just run `vagrant up` to build the VM.
+To connect enter the [Web-UI](https://test.my.domain).
+- username: admin
+- password: password
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# Update
+To update the playbook:
+- Clone the latest version of the playbook.
+-- For example: `git clone --branch v0.3.4 https://github.com/freeipa/ansible-freeipa.git`
+- Copy `roles` folder to provisioning.
+-- `cp -r ansible-freeipa/roles provisioning/`
+- Run new VM
+-- `vagrant up`
